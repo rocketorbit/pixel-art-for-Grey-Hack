@@ -1,6 +1,6 @@
 #if the image is bigger than 64x64, there are chance that the code will be too long and it does not work.
 
-scale = 10 #adjust the number to make the image bigger. 1 is normal size.
+scale = 4 #adjust the number to make the image bigger. 1 is normal size.
 
 from PIL import Image
 from pyperclip import copy
@@ -23,5 +23,5 @@ for r, g, b in pixels:
 
 ret += '</voffset></pos></size>")'
 
-print(ret)
+print(len(ret))
 copy(ret)
