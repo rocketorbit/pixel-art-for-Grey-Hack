@@ -4,7 +4,7 @@ imageId = "app"
 from PIL import Image
 from pyperclip import copy
 
-image = Image.open("ksm.png") #the name of the image file.
+image = Image.open("image.png") #the name of the image file.
 print(f"image mode: {image.mode}. Any mode that is not RGB will convert to RGB.")
 image = image.convert("RGB")
 pixels = list(image.getdata())
